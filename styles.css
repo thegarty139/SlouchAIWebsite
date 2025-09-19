@@ -45,7 +45,19 @@ header {
 
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.logo .app-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
 }
 
 .logo h1 {
@@ -137,6 +149,73 @@ nav {
 .android-logo {
     width: 20px;
     height: 20px;
+}
+
+/* App Showcase Section */
+.app-showcase {
+    margin-bottom: var(--spacing-xl);
+    display: flex;
+    justify-content: center;
+    padding: var(--spacing-lg) 0;
+}
+
+.iphone-mockup {
+    position: relative;
+    width: 300px;
+    height: 650px;
+}
+
+.iphone-frame {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    border-radius: 50px;
+    padding: 8px;
+    box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.15),
+        0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.iphone-frame::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    height: 28px;
+    background: #000000;
+    border-radius: 0 0 20px 20px;
+    z-index: 2;
+}
+
+.iphone-frame::after {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 35%;
+    height: 4px;
+    background: #333;
+    border-radius: 2px;
+}
+
+.iphone-screen {
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 42px;
+    overflow: hidden;
+    position: relative;
+}
+
+.iphone-screen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
 }
 
 /* Features Section */
@@ -431,6 +510,11 @@ footer {
     .waitlist-form {
         flex-direction: row;
     }
+    
+    .iphone-mockup {
+        width: 360px;
+        height: 740px;
+    }
 }
 
 @media (max-width: 640px) {
@@ -440,6 +524,11 @@ footer {
     
     .headline {
         font-size: 2rem;
+    }
+    
+    .iphone-mockup {
+        width: 280px;
+        height: 575px;
     }
     
     .feature-grid {
