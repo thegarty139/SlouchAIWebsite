@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Slouch AI</title>
-    <meta name="description" content="Privacy Policy for Slouch AI - Learn how we protect your data and respect your privacy.">
+    <meta name="description" content="Privacy Policy for Slouch AI - Learn how we collect, use, and protect your data.">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,177 +25,217 @@
 
         <main class="legal-content">
             <h1>Privacy Policy</h1>
-            <p class="last-updated">Last updated: January 2025</p>
+            <p class="last-updated">Last updated: December 2025</p>
 
             <section>
-                <h2>Your privacy matters to us</h2>
-                <p class="highlight">Your posture data stays on your device. We believe in privacy-first design.</p>
+                <h2>Overview</h2>
+                <p>This Privacy Policy explains how Slouch AI ("we," "us," or "our") collects, uses, stores, and shares your information when you use our mobile application. We are committed to being transparent about our data practices.</p>
             </section>
 
             <section>
                 <h2>1. Information We Collect</h2>
-                
-                <h3>1.1 Camera and Posture Data</h3>
-                <p>Slouch AI uses your device's camera to monitor posture in real-time. This data is:</p>
+
+                <h3>1.1 Account Information</h3>
+                <p>When you create an account using Apple Sign-In or Google Sign-In, we collect:</p>
                 <ul>
-                    <li>Processed locally on your device</li>
-                    <li>Never transmitted to our servers without your explicit consent</li>
-                    <li>Used solely for posture detection and improvement recommendations</li>
+                    <li>Email address</li>
+                    <li>Name (if provided by the sign-in service)</li>
+                    <li>Unique user identifier from Firebase Authentication</li>
                 </ul>
 
-                <h3>1.2 Account Information</h3>
-                <p>When you create an account, we collect:</p>
+                <h3>1.2 Profile Information</h3>
+                <p>You may optionally provide:</p>
                 <ul>
-                    <li>Email address (for authentication)</li>
-                    <li>Name (optional, for personalization)</li>
-                    <li>Authentication tokens from Apple/Google Sign-In</li>
+                    <li>Gender</li>
+                    <li>Height and weight</li>
+                    <li>Age</li>
+                    <li>Activity level</li>
+                    <li>Daily posture check-in goals</li>
                 </ul>
 
-                <h3>1.3 Usage Data</h3>
-                <p>We collect anonymous analytics to improve our service:</p>
+                <h3>1.3 Posture and Health Data</h3>
+                <p>The app collects the following posture-related data:</p>
                 <ul>
-                    <li>App feature usage patterns</li>
-                    <li>Session duration and frequency</li>
-                    <li>Device type and operating system</li>
-                    <li>Crash reports and performance metrics</li>
+                    <li><strong>Daily Check-ins:</strong> Records of your posture check-ins, including dates and completion counts</li>
+                    <li><strong>Streaks:</strong> Your consistency tracking data (current and best streaks)</li>
+                    <li><strong>Exercise Data:</strong> Completed exercises and timestamps</li>
+                    <li><strong>Headset Posture Sessions:</strong> If using AirPods for posture monitoring, motion data and posture scores from your sessions</li>
+                    <li><strong>Posture Analysis Results:</strong> Scores, summaries, identified issues, and recommendations from AI analysis (images are not stored - see Section 1.4)</li>
                 </ul>
 
-                <h3>1.4 Health and Fitness Data</h3>
-                <p>With your permission, we may access:</p>
+                <h3>1.4 Camera and Image Data</h3>
+                <p>When you use the posture analysis feature:</p>
                 <ul>
-                    <li>Posture tracking history</li>
-                    <li>Exercise completion data</li>
-                    <li>Progress metrics and streaks</li>
+                    <li>The app captures photos using your device camera</li>
+                    <li><strong>Images are sent to our servers</strong> for AI-powered posture analysis</li>
+                    <li>Our servers forward images to OpenAI's GPT-4 Vision API for analysis</li>
+                    <li><strong>Images are not stored permanently</strong> - they exist only in memory during the analysis process</li>
+                    <li>Only the analysis results (scores, text descriptions, recommendations) are saved</li>
+                </ul>
+
+                <h3>1.5 Device and Motion Data</h3>
+                <p>If you use AirPods posture monitoring:</p>
+                <ul>
+                    <li>Head motion data from compatible AirPods (AirPods Pro, AirPods Max, AirPods 3rd gen)</li>
+                    <li>This data is used to calculate posture scores during monitoring sessions</li>
+                </ul>
+
+                <h3>1.6 Usage and Analytics Data</h3>
+                <p>We automatically collect:</p>
+                <ul>
+                    <li>App feature usage and engagement metrics</li>
+                    <li>Session information</li>
+                    <li>Device type and operating system version</li>
+                    <li>Crash reports and performance diagnostics</li>
+                    <li>Subscription and purchase events</li>
                 </ul>
             </section>
 
             <section>
                 <h2>2. How We Use Your Information</h2>
-                <p>We use collected information to:</p>
+                <p>We use your information to:</p>
                 <ul>
-                    <li>Provide real-time posture monitoring and alerts</li>
+                    <li>Provide posture monitoring and analysis features</li>
                     <li>Generate personalized exercise recommendations</li>
-                    <li>Track your progress and maintain streaks</li>
-                    <li>Sync data across your devices (when logged in)</li>
-                    <li>Improve app performance and user experience</li>
-                    <li>Send important service updates</li>
+                    <li>Track your progress, streaks, and achievements</li>
+                    <li>Sync your data across devices when you're signed in</li>
+                    <li>Send posture check-in reminder notifications</li>
+                    <li>Process subscription payments</li>
+                    <li>Improve app performance and fix bugs</li>
+                    <li>Provide customer support</li>
                 </ul>
             </section>
 
             <section>
-                <h2>3. Data Storage and Security</h2>
-                
+                <h2>3. Data Storage and Synchronization</h2>
+
                 <h3>3.1 Local Storage</h3>
-                <p>Most of your data is stored locally on your device using:</p>
+                <p>Your data is stored locally on your device using:</p>
                 <ul>
-                    <li>Core Data for structured information</li>
-                    <li>Secure keychain for sensitive data</li>
-                    <li>Device-level encryption</li>
+                    <li>Core Data for structured information (check-ins, exercises, profile data)</li>
+                    <li>Secure Keychain for sensitive credentials</li>
                 </ul>
 
-                <h3>3.2 Cloud Sync (Optional)</h3>
-                <p>If you choose to enable cloud sync:</p>
+                <h3>3.2 Cloud Synchronization</h3>
+                <p><strong>Important:</strong> When you sign in to Slouch AI, your data is automatically synchronized to our cloud servers (Firebase Firestore). This includes:</p>
                 <ul>
-                    <li>Data is encrypted in transit using TLS</li>
-                    <li>Stored securely in Firebase Firestore</li>
-                    <li>Accessible only with your authentication</li>
-                    <li>Can be deleted at any time from settings</li>
+                    <li>All check-in records</li>
+                    <li>Streak data</li>
+                    <li>Exercise completion history</li>
+                    <li>User profile information</li>
+                    <li>Headset posture session data</li>
+                    <li>Saved posture analysis results (excluding images)</li>
                 </ul>
+                <p>Cloud sync enables you to access your data across multiple devices and prevents data loss if you change devices.</p>
 
-                <h3>3.3 AI Processing</h3>
-                <p>When using AI features:</p>
+                <h3>3.3 Data Security</h3>
                 <ul>
-                    <li>Posture images are processed locally when possible</li>
-                    <li>AI coaching requests are anonymized</li>
-                    <li>No personal health data is retained by AI providers</li>
+                    <li>Data is encrypted in transit using TLS/SSL</li>
+                    <li>Cloud data is stored in Firebase Firestore with security rules that restrict access to your own data</li>
+                    <li>Authentication is handled through Firebase Authentication</li>
                 </ul>
             </section>
 
             <section>
                 <h2>4. Third-Party Services</h2>
-                <p>We use the following third-party services:</p>
-                
-                <h3>4.1 Analytics</h3>
-                <ul>
-                    <li><strong>Firebase Analytics:</strong> Anonymous usage tracking</li>
-                    <li><strong>Crashlytics:</strong> Crash reporting and diagnostics</li>
-                </ul>
+                <p>We use the following third-party services that may receive your data:</p>
 
-                <h3>4.2 Authentication</h3>
+                <h3>4.1 Firebase (Google)</h3>
                 <ul>
-                    <li><strong>Firebase Auth:</strong> Secure user authentication</li>
-                    <li><strong>Apple Sign-In:</strong> Privacy-focused authentication</li>
-                    <li><strong>Google Sign-In:</strong> Cross-platform authentication</li>
+                    <li><strong>Firebase Authentication:</strong> Manages user sign-in and identity</li>
+                    <li><strong>Firebase Firestore:</strong> Stores your synchronized data</li>
+                    <li><strong>Firebase Analytics:</strong> Collects anonymous usage statistics</li>
+                    <li><strong>Firebase Crashlytics:</strong> Collects crash reports for debugging</li>
                 </ul>
+                <p>Privacy Policy: <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></p>
 
-                <h3>4.3 AI Services</h3>
+                <h3>4.2 OpenAI</h3>
                 <ul>
-                    <li><strong>OpenAI:</strong> Coaching recommendations (anonymized)</li>
-                    <li><strong>Anthropic Claude:</strong> Exercise suggestions (anonymized)</li>
+                    <li>Posture images are sent to OpenAI's GPT-4 Vision API for analysis</li>
+                    <li>AI coaching conversations are processed by OpenAI's ChatGPT</li>
+                    <li>Requests include your Firebase user ID for rate limiting purposes</li>
+                </ul>
+                <p>Privacy Policy: <a href="https://openai.com/privacy" target="_blank">openai.com/privacy</a></p>
+
+                <h3>4.3 Anthropic</h3>
+                <ul>
+                    <li>Some AI coaching features may use Anthropic's Claude API</li>
+                </ul>
+                <p>Privacy Policy: <a href="https://www.anthropic.com/privacy" target="_blank">anthropic.com/privacy</a></p>
+
+                <h3>4.4 RevenueCat</h3>
+                <ul>
+                    <li>Manages subscription purchases and entitlements</li>
+                    <li>Receives purchase transaction data from Apple</li>
+                </ul>
+                <p>Privacy Policy: <a href="https://www.revenuecat.com/privacy" target="_blank">revenuecat.com/privacy</a></p>
+
+                <h3>4.5 Apple and Google</h3>
+                <ul>
+                    <li>Sign-In services for authentication</li>
+                    <li>App Store for purchases and subscriptions</li>
                 </ul>
             </section>
 
             <section>
                 <h2>5. Your Rights and Controls</h2>
-                <p>You have complete control over your data:</p>
-                
-                <h3>5.1 Access and Portability</h3>
+
+                <h3>5.1 Access Your Data</h3>
+                <p>You can view all your data within the app, including check-in history, streaks, and saved posture reports.</p>
+
+                <h3>5.2 Delete Your Data</h3>
                 <ul>
-                    <li>Export all your data from the app settings</li>
-                    <li>Request a copy of your cloud-stored data</li>
+                    <li>Delete individual saved posture reports from within the app</li>
+                    <li>Delete your entire account, which removes all your data from both your device and our cloud servers</li>
                 </ul>
 
-                <h3>5.2 Modification and Deletion</h3>
+                <h3>5.3 Camera and Motion Permissions</h3>
                 <ul>
-                    <li>Edit or delete any personal information</li>
-                    <li>Clear local posture history</li>
-                    <li>Delete your account and all associated data</li>
+                    <li>You can revoke camera access through your device's Settings app</li>
+                    <li>You can revoke motion access for AirPods through your device's Settings app</li>
+                    <li>The app will still function with limited features if permissions are revoked</li>
                 </ul>
 
-                <h3>5.3 Permission Management</h3>
-                <ul>
-                    <li>Revoke camera access at any time</li>
-                    <li>Disable cloud sync</li>
-                    <li>Opt out of analytics collection</li>
-                </ul>
+                <h3>5.4 Notifications</h3>
+                <p>You can disable posture check-in reminders through the app settings or your device's notification settings.</p>
             </section>
 
             <section>
                 <h2>6. Data Retention</h2>
                 <ul>
-                    <li><strong>Local data:</strong> Retained until app deletion or manual clearing</li>
-                    <li><strong>Cloud data:</strong> Retained while account is active</li>
-                    <li><strong>Deleted accounts:</strong> Data removed within 30 days</li>
-                    <li><strong>Analytics:</strong> Anonymized and aggregated after 60 days</li>
+                    <li><strong>Local data:</strong> Retained on your device until you delete the app or clear app data</li>
+                    <li><strong>Cloud data:</strong> Retained while your account is active</li>
+                    <li><strong>Account deletion:</strong> All cloud data is deleted when you delete your account</li>
+                    <li><strong>Posture images:</strong> Not retained - processed in memory and immediately discarded</li>
+                    <li><strong>Analytics data:</strong> Retained according to Firebase's data retention policies</li>
                 </ul>
             </section>
 
             <section>
                 <h2>7. Children's Privacy</h2>
-                <p>Slouch AI is not intended for children under 13. We do not knowingly collect personal information from children. If you believe we have collected information from a child, please contact us immediately.</p>
+                <p>Slouch AI is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us so we can delete that information.</p>
             </section>
 
             <section>
                 <h2>8. International Data Transfers</h2>
-                <p>If you use Slouch AI outside the United States, your information may be transferred to and processed in the United States where our servers are located. We ensure appropriate safeguards are in place for such transfers.</p>
+                <p>Your data may be transferred to and processed in the United States where our servers and third-party service providers are located. By using Slouch AI, you consent to this transfer. We use services that comply with applicable data protection requirements for international transfers.</p>
             </section>
 
             <section>
                 <h2>9. Changes to This Policy</h2>
-                <p>We may update this privacy policy from time to time. We will notify you of any changes by:</p>
+                <p>We may update this Privacy Policy from time to time. We will notify you of significant changes by:</p>
                 <ul>
-                    <li>Posting the new policy on this page</li>
+                    <li>Posting the updated policy on this page</li>
                     <li>Updating the "Last updated" date</li>
-                    <li>Sending an in-app notification for significant changes</li>
+                    <li>Providing notice within the app for material changes</li>
                 </ul>
             </section>
 
             <section>
                 <h2>10. Contact Us</h2>
-                <p>If you have questions about this privacy policy or our data practices:</p>
+                <p>If you have questions about this Privacy Policy or our data practices, please contact us at:</p>
                 <ul>
-                    <li>Email: <a href="mailto:privacy@slouchai.app">privacy@slouchai.app</a></li>
-                    <li>In-app: Settings � Privacy � Contact Support</li>
+                    <li>Email: <a href="mailto:support@slouchai.com">support@slouchai.com</a></li>
                 </ul>
                 <p>False Summit Solutions LLC<br>
                 Developer of Slouch AI</p>
@@ -208,10 +248,10 @@
                     <a href="index.html">Home</a>
                     <a href="privacy.html">Privacy</a>
                     <a href="terms.html">Terms</a>
-                    <a href="mailto:support@slouchai.app">Contact</a>
+                    <a href="mailto:support@slouchai.com">Contact</a>
                 </div>
                 <div class="copyright">
-                    � 2025 Slouch AI. All rights reserved.
+                    &copy; 2025 Slouch AI. All rights reserved.
                 </div>
             </div>
         </footer>
