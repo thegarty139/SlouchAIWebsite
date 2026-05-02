@@ -1,6 +1,6 @@
-# Posture Max Website
+# PostureMax Website
 
-Landing page for Posture Max - an AI-powered posture tracking app.
+Landing page for PostureMax - an AI-powered posture tracking app.
 
 ## Deployment
 

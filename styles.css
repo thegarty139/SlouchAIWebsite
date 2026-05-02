@@ -1,5 +1,5 @@
 /* =========================================================
-   Posture Max — Website Styles
+   PostureMax — Website Styles
    Mirrors the in-app Unshrimp theme:
      - Palette: shellCream / coralPop / seafoamMint / sandy / gold
      - Type: Fredoka (display), Nunito (body), Quicksand (UI)
@@ -353,12 +353,6 @@ section h3 {
     margin-bottom: var(--spacing-xl);
 }
 
-.feature-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: var(--spacing-md);
-}
-
 .feature {
     background-color: var(--bg-card);
     border: 1.5px solid var(--border);
@@ -372,6 +366,92 @@ section h3 {
 .feature:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-elevated);
+}
+
+/* ---------- Carousel ---------- */
+.carousel {
+    --cards-visible: 3;
+    --card-gap: var(--spacing-md);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.carousel-viewport {
+    flex: 1;
+    overflow: hidden;
+    /* Bleed shadows out of the clip a touch — soft padding on the
+       inside so card hover lift isn't cropped */
+    padding: 6px 2px 12px;
+    margin: -6px -2px -12px;
+}
+
+.carousel-track {
+    display: flex;
+    gap: var(--card-gap);
+    transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: transform;
+}
+
+.carousel-item {
+    /* Each card occupies (1 / cards-visible) of the viewport,
+       minus its share of the gaps between visible cards. */
+    flex: 0 0 calc(
+        (100% - (var(--cards-visible) - 1) * var(--card-gap))
+        / var(--cards-visible)
+    );
+    min-width: 0;
+}
+
+.carousel-arrow {
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1.5px solid var(--border);
+    background-color: var(--bg-card);
+    color: var(--coral-deep);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: var(--shadow-card);
+    transition: background-color 0.2s ease,
+                color 0.2s ease,
+                transform 0.2s ease,
+                box-shadow 0.2s ease,
+                opacity 0.2s ease;
+}
+
+.carousel-arrow svg {
+    width: 22px;
+    height: 22px;
+}
+
+.carousel-arrow:hover:not(:disabled) {
+    background-color: var(--coral-pop);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(232, 93, 74, 0.28);
+}
+
+.carousel-arrow:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+.carousel-arrow:focus-visible {
+    outline: 3px solid var(--coral-pop);
+    outline-offset: 3px;
+}
+
+.carousel-arrow:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .carousel-track { transition: none; }
 }
 
 .feature-icon {
@@ -811,6 +891,10 @@ footer {
     }
 }
 
+@media (max-width: 900px) {
+    .carousel { --cards-visible: 2; }
+}
+
 @media (max-width: 720px) {
     .evolution-track {
         grid-template-columns: repeat(5, 1fr);
@@ -833,7 +917,15 @@ footer {
         height: 575px;
     }
 
-    .feature-grid,
+    .carousel {
+        --cards-visible: 1;
+        --card-gap: var(--spacing-sm);
+        gap: 0.5rem;
+    }
+
+    .carousel-arrow { width: 38px; height: 38px; }
+    .carousel-arrow svg { width: 18px; height: 18px; }
+
     .steps,
     .benefit-list { grid-template-columns: 1fr; }
 
