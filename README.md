@@ -1,6 +1,6 @@
-# Slouch AI Website
+# Posture Max Website
 
-Landing page for Slouch AI - an AI-powered posture tracking app.
+Landing page for Posture Max - an AI-powered posture tracking app.
 
 ## Deployment
 
@@ -8,7 +8,7 @@ This website is designed to be deployed on GitHub Pages.
 
 ### Setup Instructions:
 
-1. Create a new GitHub repository named `slouchai-website` or similar
+1. Create a new GitHub repository named `posturemax-website` or similar
 2. Push this `website` folder to the repository
 3. Go to Settings → Pages in your GitHub repository
 4. Set Source to "Deploy from a branch"
@@ -17,7 +17,7 @@ This website is designed to be deployed on GitHub Pages.
 
 The website will be available at:
 - `https://[your-username].github.io/[repository-name]/` (default)
-- `https://slouchai.app` (if you configure the custom domain in the CNAME file)
+- `https://posturemax.app` (if you configure the custom domain in the CNAME file)
 
 ### Custom Domain Setup:
 

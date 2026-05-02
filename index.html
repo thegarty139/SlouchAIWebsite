@@ -3,31 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slouch AI - Fix Your Posture, Transform Your Life</title>
-    <meta name="description" content="AI-powered posture tracking app that helps you sit straighter, stand taller, and feel better. Available on iOS.">
+    <title>Posture Max — Evolve Your Posture</title>
+    <meta name="description" content="Posture Max is a gamified posture coach. Hatch a tiny shrimp, train your posture with AI, and evolve through 5 stages as you stand taller and feel better.">
+    <meta name="theme-color" content="#FFF8F0">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Posture Max — Evolve Your Posture">
+    <meta property="og:description" content="A gamified posture coach. Stand taller, feel better, evolve your shrimp.">
+    <meta property="og:image" content="app-icon.png">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" type="image/png" href="app-icon.png">
     <link rel="stylesheet" href="styles.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- App font system: Fredoka (display), Nunito (body), Quicksand (UI) -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <header>
             <nav>
-                <div class="logo">
-                    <img src="app-icon.png" alt="Slouch AI Icon" class="app-icon">
-                    <h1>Slouch AI</h1>
+                <a href="/" class="logo">
+                    <img src="app-icon.png" alt="Posture Max app icon" class="app-icon">
+                    <h1>Posture Max</h1>
+                </a>
+                <div class="nav-links">
+                    <a href="#features">Features</a>
+                    <a href="#evolution">Evolution</a>
+                    <a href="#waitlist">Android</a>
                 </div>
             </nav>
         </header>
 
         <main>
+            <!-- HERO -->
             <section class="hero">
-                <div class="tagline">stand taller | feel better | live confident</div>
-                
-                <h2 class="headline">Your posture is ruining your life.</h2>
-                <p class="subheadline">Let's fix it together.</p>
-                
+                <div class="tagline">Stand taller · Feel better · Evolve daily</div>
+
+                <h1 class="headline">
+                    Your shrimp slouches.<br>
+                    <span class="accent">Let's evolve it.</span>
+                </h1>
+                <p class="subheadline">
+                    Posture Max is a gamified posture coach for iOS.
+                    Run an AI posture scan, monitor your head with AirPods, build streaks,
+                    and evolve a tiny shrimp through 5 stages as your posture gets stronger.
+                </p>
+
+                <div class="hero-mascot">
+                    <img src="Assets/mascots/stage1_shrimpy.png" alt="Stage 1 shrimp mascot — curled and ready to evolve">
+                </div>
+
                 <div class="cta-buttons">
                     <a href="https://apps.apple.com/app/idYOUR_APP_ID" class="btn btn-primary">
                         <svg class="apple-logo" viewBox="0 0 24 24" fill="currentColor">
@@ -44,74 +72,146 @@
                 </div>
             </section>
 
+            <!-- COACH QUOTE -->
+            <section class="coach-quote">
+                <p>"hey friend. we've been curled for 47 minutes. let's stretch."</p>
+                <div class="quote-attribution">— your shrimp, probably</div>
+            </section>
+
+            <!-- APP SHOWCASE -->
             <section class="app-showcase">
                 <div class="iphone-mockup">
                     <div class="iphone-frame">
                         <div class="iphone-screen">
-                            <img src="app-screenshot.jpeg" alt="Slouch AI App Screenshot" />
+                            <img src="app-screenshot.jpeg" alt="Posture Max app screenshot" />
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="features">
-                <h3>Transform your posture with AI</h3>
+            <!-- EVOLUTION STAGES -->
+            <section class="evolution" id="evolution">
+                <h3>Five stages of evolution</h3>
+                <p class="section-subtitle">
+                    Earn XP every time you fix your posture, hit a check-in, or finish a training drill.
+                    Your shrimp evolves as you do.
+                </p>
+
+                <div class="evolution-track">
+                    <div class="stage">
+                        <div class="stage-art">
+                            <img src="Assets/mascots/stage1_shrimpy.png" alt="Stage 1 mascot">
+                        </div>
+                        <div class="stage-label">Stage 1</div>
+                        <div class="stage-xp">0 XP</div>
+                    </div>
+                    <div class="stage">
+                        <div class="stage-art">
+                            <img src="Assets/mascots/stage2_prawnie.png" alt="Stage 2 mascot">
+                        </div>
+                        <div class="stage-label">Stage 2</div>
+                        <div class="stage-xp">100 XP</div>
+                    </div>
+                    <div class="stage">
+                        <div class="stage-art">
+                            <img src="Assets/mascots/stage3_crabsworth.png" alt="Stage 3 mascot">
+                        </div>
+                        <div class="stage-label">Stage 3</div>
+                        <div class="stage-xp">300 XP</div>
+                    </div>
+                    <div class="stage">
+                        <div class="stage-art">
+                            <img src="Assets/mascots/stage4_clawdius.png" alt="Stage 4 mascot">
+                        </div>
+                        <div class="stage-label">Stage 4</div>
+                        <div class="stage-xp">600 XP</div>
+                    </div>
+                    <div class="stage">
+                        <div class="stage-art">
+                            <img src="Assets/mascots/stage5_shellbound.png" alt="Stage 5 mascot">
+                        </div>
+                        <div class="stage-label">Stage 5</div>
+                        <div class="stage-xp">1000 XP</div>
+                    </div>
+                </div>
+
+                <div class="xp-bar"><div class="xp-bar-fill"></div></div>
+            </section>
+
+            <!-- FEATURES -->
+            <section class="features" id="features">
+                <h3>Built for real progress</h3>
+                <p class="section-subtitle">Three core systems, all wired into one cute, evolving mascot.</p>
+
                 <div class="feature-grid">
                     <div class="feature">
                         <div class="feature-icon">📸</div>
-                        <h4>Real-time tracking</h4>
-                        <p>AI-powered camera monitoring that detects slouching instantly</p>
+                        <h4>AI Posture Scan</h4>
+                        <p>Snap a front and side photo. Get a Shell Score (0&ndash;100), pinpointed problem zones, and a personalized drill plan. Your photos are analyzed and discarded &mdash; never stored.</p>
                     </div>
-                    <div class="feature">
-                        <div class="feature-icon">🎯</div>
-                        <h4>Personalized coaching</h4>
-                        <p>Get custom exercises and tips tailored to your posture needs</p>
+                    <div class="feature feature-mint">
+                        <div class="feature-icon">🎧</div>
+                        <h4>AirPods Posture Sessions</h4>
+                        <p>Start a session and your AirPods track head orientation in real time. See a live posture score and a full session summary when you're done. Works on AirPods Pro, Max, and 3rd&nbsp;gen.</p>
                     </div>
-                    <div class="feature">
-                        <div class="feature-icon">📊</div>
-                        <h4>Track progress</h4>
-                        <p>Monitor your improvement with detailed analytics and streaks</p>
+                    <div class="feature feature-gold">
+                        <div class="feature-icon">⚡</div>
+                        <h4>XP &amp; Evolution</h4>
+                        <p>Every check-in, scan, drill, and good-posture hour earns XP. Hit thresholds and evolve your shrimp through five stages, from curled rookie to crowned Stage&nbsp;5.</p>
+                    </div>
+                    <div class="feature feature-lavender">
+                        <div class="feature-icon">🔥</div>
+                        <h4>Streaks &amp; Daily Drills</h4>
+                        <p>Daily check-ins, guided training drills, and a streak system that actually feels good to keep alive. Gentle reminders, no nagging.</p>
                     </div>
                 </div>
             </section>
 
+            <!-- HOW IT WORKS -->
             <section class="how-it-works">
                 <h3>How it works</h3>
+                <p class="section-subtitle">Three steps. No willpower required.</p>
+
                 <div class="steps">
                     <div class="step">
                         <div class="step-number">1</div>
-                        <h4>Set up monitoring</h4>
-                        <p>Position your device camera to track your posture throughout the day</p>
+                        <h4>Sign in &amp; hatch</h4>
+                        <p>Sign in with Apple or Google, set up your profile, choose a shell color, and meet the curled-up little guy who needs your help.</p>
                     </div>
                     <div class="step">
                         <div class="step-number">2</div>
-                        <h4>Get instant alerts</h4>
-                        <p>Receive gentle reminders when you start slouching</p>
+                        <h4>Scan, monitor, drill</h4>
+                        <p>Run a quick AI posture scan, start AirPods sessions when you're at your desk, and finish daily drills. Everything earns XP.</p>
                     </div>
                     <div class="step">
                         <div class="step-number">3</div>
-                        <h4>Build better habits</h4>
-                        <p>Follow personalized exercises and watch your posture improve</p>
+                        <h4>Evolve &amp; stand tall</h4>
+                        <p>Build streaks, hit XP thresholds, and watch your shrimp evolve through five stages &mdash; from curled to crowned.</p>
                     </div>
                 </div>
             </section>
 
+            <!-- BENEFITS -->
             <section class="benefits">
                 <h3>Why good posture matters</h3>
+                <p class="section-subtitle">The shrimp is the fun part. The benefits are real. Posture Max is a general-wellness app, not a medical device &mdash; see our <a href="terms.html">Terms</a> for the full disclaimer.</p>
+
                 <div class="benefit-list">
-                    <div class="benefit">✓ Reduce back and neck pain</div>
-                    <div class="benefit">✓ Boost confidence and presence</div>
-                    <div class="benefit">✓ Improve breathing and energy</div>
-                    <div class="benefit">✓ Prevent long-term health issues</div>
-                    <div class="benefit">✓ Look taller and more professional</div>
+                    <div class="benefit">Less back and neck strain</div>
+                    <div class="benefit">More confidence and presence</div>
+                    <div class="benefit">Easier breathing, more energy</div>
+                    <div class="benefit">Awareness of long-term posture habits</div>
+                    <div class="benefit">Look taller, feel sharper</div>
+                    <div class="benefit">Build habits that actually stick</div>
                 </div>
             </section>
 
+            <!-- WAITLIST -->
             <section id="waitlist" class="waitlist">
-                <h3>Coming to Android</h3>
-                <p>Join the waitlist to be notified when Slouch AI launches on Google Play</p>
+                <h3>Coming soon to Android</h3>
+                <p>Join the waitlist and we'll let you know the second your shrimp is ready to hatch on Google Play.</p>
                 <form class="waitlist-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <input type="email" name="email" placeholder="you@example.com" required>
                     <button type="submit" class="btn btn-primary">Join Waitlist</button>
                 </form>
             </section>
@@ -119,14 +219,18 @@
 
         <footer>
             <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="app-icon.png" alt="Posture Max icon">
+                    Posture Max
+                </div>
                 <div class="footer-links">
                     <a href="privacy.html">Privacy</a>
                     <a href="terms.html">Terms</a>
-                    <a href="mailto:support@slouchai.app">Contact</a>
+                    <a href="mailto:support@posturemax.com">Contact</a>
                 </div>
-                <div class="copyright">
-                    © 2025 Slouch AI. All rights reserved.
-                </div>
+            </div>
+            <div class="copyright">
+                © 2026 Posture Max. All rights reserved.
             </div>
         </footer>
     </div>

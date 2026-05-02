@@ -3,283 +3,311 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Slouch AI</title>
-    <meta name="description" content="Privacy Policy for Slouch AI - Learn how we collect, use, and protect your data.">
+    <title>Privacy Policy — Posture Max</title>
+    <meta name="description" content="Privacy Policy for Posture Max — learn how we collect, use, and protect your data.">
+    <meta name="theme-color" content="#FFF8F0">
+    <link rel="icon" type="image/png" href="app-icon.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <header>
             <nav>
-                <div class="logo">
-                    <a href="index.html" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none; color: inherit;">
-                        <img src="app-icon.png" alt="Slouch AI Icon" class="app-icon">
-                        <h1>Slouch AI</h1>
-                    </a>
+                <a href="index.html" class="logo">
+                    <img src="app-icon.png" alt="Posture Max app icon" class="app-icon">
+                    <h1>Posture Max</h1>
+                </a>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="terms.html">Terms</a>
                 </div>
             </nav>
         </header>
 
         <main class="legal-content">
             <h1>Privacy Policy</h1>
-            <p class="last-updated">Last updated: December 2025</p>
+            <p class="last-updated">Last updated: May 2, 2026</p>
+            <p class="last-updated">Effective date: May 2, 2026</p>
 
             <section>
                 <h2>Overview</h2>
-                <p>This Privacy Policy explains how Slouch AI ("we," "us," or "our") collects, uses, stores, and shares your information when you use our mobile application. We are committed to being transparent about our data practices.</p>
+                <p>This Privacy Policy explains how False Summit Solutions LLC ("Posture Max," "we," "us," or "our") collects, uses, stores, and shares your information when you use the Posture Max mobile application (the "App") and related services. We've tried to write this in plain language. If anything is unclear, email us at <a href="mailto:support@posturemax.com">support@posturemax.com</a>.</p>
+                <p class="highlight">In short: we collect what we need to make the App work — your account, your posture data, and the photos you take during scans. Photos are used for AI analysis and discarded; only the results are kept. You can delete everything from inside the App at any time.</p>
             </section>
 
             <section>
                 <h2>1. Information We Collect</h2>
 
                 <h3>1.1 Account Information</h3>
-                <p>When you create an account using Apple Sign-In or Google Sign-In, we collect:</p>
+                <p>You can sign in using <strong>Apple Sign-In</strong> or <strong>Google Sign-In</strong>. When you do, we receive:</p>
                 <ul>
-                    <li>Email address</li>
-                    <li>Name (if provided by the sign-in service)</li>
-                    <li>Unique user identifier from Firebase Authentication</li>
+                    <li>Your email address (or, with Apple Sign-In, a private relay address if you choose)</li>
+                    <li>Your name, if provided by the sign-in service</li>
+                    <li>A unique account identifier from Firebase Authentication</li>
                 </ul>
 
                 <h3>1.2 Profile Information</h3>
-                <p>You may optionally provide:</p>
+                <p>During onboarding and in Settings, you may provide:</p>
                 <ul>
                     <li>Gender</li>
                     <li>Height and weight</li>
-                    <li>Age</li>
+                    <li>Age (must be 13 or older — see Section 8)</li>
                     <li>Activity level</li>
-                    <li>Daily posture check-in goals</li>
+                    <li>Daily reminder preferences</li>
+                    <li>Where you heard about the App (referral source)</li>
                 </ul>
 
-                <h3>1.3 Posture and Health Data</h3>
-                <p>The app collects the following posture-related data:</p>
+                <h3>1.3 Posture &amp; Activity Data</h3>
                 <ul>
-                    <li><strong>Daily Check-ins:</strong> Records of your posture check-ins, including dates and completion counts</li>
-                    <li><strong>Streaks:</strong> Your consistency tracking data (current and best streaks)</li>
-                    <li><strong>Exercise Data:</strong> Completed exercises and timestamps</li>
-                    <li><strong>Headset Posture Sessions:</strong> If using AirPods for posture monitoring, motion data and posture scores from your sessions</li>
-                    <li><strong>Posture Analysis Results:</strong> Scores, summaries, identified issues, and recommendations from AI analysis (images are not stored - see Section 1.4)</li>
+                    <li><strong>Daily check-ins:</strong> dates, completion counts, and reminder responses</li>
+                    <li><strong>Streak data:</strong> current streak, best streak, last active date</li>
+                    <li><strong>Training drills:</strong> drill type, duration, completion timestamps</li>
+                    <li><strong>AirPods posture sessions:</strong> session date, duration, average / best / worst score, and head-orientation samples used to compute posture scores (see Section 1.5)</li>
+                    <li><strong>Posture scan reports:</strong> the numerical Shell Score, identified problem zones, summary text, and recommended drills generated from your scans (the source images are <em>not</em> retained — see Section 1.4)</li>
                 </ul>
 
-                <h3>1.4 Camera and Image Data</h3>
-                <p>When you use the posture analysis feature:</p>
+                <h3>1.4 Camera &amp; Photo Data (Posture Scans)</h3>
+                <p>When you run an AI Posture Scan, the App captures one or two photos (front and side) using your device camera. These photos are:</p>
                 <ul>
-                    <li>The app captures photos using your device camera</li>
-                    <li><strong>Images are sent to our servers</strong> for AI-powered posture analysis</li>
-                    <li>Our servers forward images to OpenAI's GPT-4 Vision API for analysis</li>
-                    <li><strong>Images are not stored permanently</strong> - they exist only in memory during the analysis process</li>
-                    <li>Only the analysis results (scores, text descriptions, recommendations) are saved</li>
+                    <li>Resized and compressed on your device before transmission;</li>
+                    <li>Sent over an encrypted (HTTPS / TLS) connection to our backend, which forwards them to <strong>OpenAI's GPT-4 family Vision API</strong> (in some configurations via the <strong>AIProxy</strong> proxy service) for analysis;</li>
+                    <li>Held in memory only for as long as the analysis takes, and then discarded — neither we nor our backend store the photos persistently;</li>
+                    <li>Never written to your device's Photo Library, never shared with anyone other than the AI provider described above.</li>
                 </ul>
+                <p>Only the textual / numeric analysis results (your Shell Score, problem zones, and recommended drills) are saved on your device and synced to your account.</p>
 
-                <h3>1.5 Device and Motion Data</h3>
-                <p>If you use AirPods posture monitoring:</p>
+                <h3>1.5 Motion Data (AirPods)</h3>
+                <p>If you start an AirPods posture monitoring session, we use the <strong>Headphone Motion API</strong> (compatible with AirPods Pro, AirPods Max, AirPods 3rd generation, and other headphones supporting head tracking) to read head orientation while the session is active. This motion data:</p>
                 <ul>
-                    <li>Head motion data from compatible AirPods (AirPods Pro, AirPods Max, AirPods 3rd gen)</li>
-                    <li>This data is used to calculate posture scores during monitoring sessions</li>
+                    <li>Is processed entirely on your device to compute a real-time posture score;</li>
+                    <li>Is summarized into a session record (averages, durations, score samples) that is saved locally and synced to your account;</li>
+                    <li>Is <strong>not</strong> transmitted to OpenAI, Anthropic, or any other third party.</li>
                 </ul>
 
-                <h3>1.6 Usage and Analytics Data</h3>
+                <h3>1.6 Gamification Data</h3>
+                <p>The App includes a mascot-evolution gamification layer. We collect and store:</p>
+                <ul>
+                    <li>Your shrimp's display name (defaults to "Shrimpy"; you can rename it)</li>
+                    <li>Your chosen shell color</li>
+                    <li>Total XP, current evolution stage, and highest stage reached</li>
+                    <li>XP events (source, amount, timestamp) and daily XP totals</li>
+                    <li>Streak length and last-active date</li>
+                </ul>
+
+                <h3>1.7 Subscription &amp; Purchase Data</h3>
+                <p>If you purchase a subscription, Apple's App Store handles the transaction. We use <strong>RevenueCat</strong> to receive your subscription entitlement status (active / expired / trial) keyed to an anonymous user ID. We do not see, receive, or store your full payment card or Apple ID credentials.</p>
+
+                <h3>1.8 Diagnostics &amp; Usage Data</h3>
                 <p>We automatically collect:</p>
                 <ul>
-                    <li>App feature usage and engagement metrics</li>
-                    <li>Session information</li>
-                    <li>Device type and operating system version</li>
-                    <li>Crash reports and performance diagnostics</li>
-                    <li>Subscription and purchase events</li>
+                    <li>Crash logs and performance diagnostics (Firebase Crashlytics)</li>
+                    <li>Aggregate feature-usage events (Firebase Analytics) — e.g. which screens are opened, which features are used, how often the App is launched</li>
+                    <li>Device model, operating system version, App version, language, and region</li>
                 </ul>
 
-                <h3>1.7 Advertising and Tracking Data</h3>
-                <p>If you grant tracking permission, we may collect:</p>
+                <h3>1.9 Push Notifications</h3>
+                <p>If you grant notification permission, we send local and remote notifications for posture reminders, streaks, milestones, and evolution events. You can disable these in iOS Settings or in the App's settings at any time.</p>
+
+                <h3>1.10 Advertising &amp; Tracking Data</h3>
+                <p>The App integrates the <strong>Meta (Facebook) iOS SDK</strong> for advertising attribution and campaign measurement. On first launch you will see an Apple <strong>App Tracking Transparency (ATT)</strong> prompt. The data we share with Meta depends on your choice:</p>
                 <ul>
-                    <li><strong>Device Identifier (IDFA):</strong> Apple's Identifier for Advertisers, used to measure ad effectiveness</li>
-                    <li><strong>Purchase Events:</strong> Information about in-app purchases for ad campaign optimization</li>
-                    <li><strong>App Events:</strong> Interactions such as viewing the paywall, initiating checkout, and completing purchases</li>
+                    <li><strong>If you allow tracking:</strong> we may share your Identifier for Advertisers (IDFA), purchase events (e.g. trial start, subscription started), and product-interaction events with Meta to measure ad effectiveness and optimize campaigns.</li>
+                    <li><strong>If you deny tracking:</strong> the IDFA is not shared. We may still use Apple's privacy-preserving <strong>SKAdNetwork</strong> and Meta's <strong>Aggregated Event Measurement (AEM)</strong> to receive anonymized, aggregate conversion signals.</li>
                 </ul>
-                <p>This data is shared with Meta (Facebook) to measure and optimize advertising campaigns. You can control this through the App Tracking Transparency prompt or your device's privacy settings.</p>
+                <p>Denying tracking does not change any core functionality of the App.</p>
             </section>
 
             <section>
                 <h2>2. How We Use Your Information</h2>
                 <p>We use your information to:</p>
                 <ul>
-                    <li>Provide posture monitoring and analysis features</li>
-                    <li>Generate personalized exercise recommendations</li>
-                    <li>Track your progress, streaks, and achievements</li>
-                    <li>Sync your data across devices when you're signed in</li>
-                    <li>Send posture check-in reminder notifications</li>
-                    <li>Process subscription payments</li>
-                    <li>Improve app performance and fix bugs</li>
-                    <li>Provide customer support</li>
+                    <li>Operate the App's core posture-monitoring, scanning, and coaching features;</li>
+                    <li>Compute Shell Scores, generate drills, and award XP;</li>
+                    <li>Track streaks, evolve your mascot, and deliver gamification rewards;</li>
+                    <li>Sync your data across devices when you are signed in;</li>
+                    <li>Send notifications you've opted in to;</li>
+                    <li>Process subscription purchases and manage entitlements;</li>
+                    <li>Diagnose crashes, fix bugs, and improve performance;</li>
+                    <li>Prevent abuse and enforce our Terms;</li>
+                    <li>Provide customer support;</li>
+                    <li>Comply with legal obligations.</li>
                 </ul>
+                <p>We do <strong>not</strong> sell your personal information. We do not use your posture data, scans, or motion data to train AI models.</p>
             </section>
 
             <section>
-                <h2>3. Data Storage and Synchronization</h2>
+                <h2>3. Where Your Data Lives</h2>
 
-                <h3>3.1 Local Storage</h3>
-                <p>Your data is stored locally on your device using:</p>
+                <h3>3.1 On Your Device</h3>
                 <ul>
-                    <li>Core Data for structured information (check-ins, exercises, profile data)</li>
-                    <li>Secure Keychain for sensitive credentials</li>
+                    <li><strong>Core Data</strong> stores your check-ins, sessions, profile, and gamification data locally;</li>
+                    <li><strong>iOS Keychain</strong> stores authentication tokens securely;</li>
+                    <li><strong>UserDefaults</strong> stores small preference values.</li>
                 </ul>
 
-                <h3>3.2 Cloud Synchronization</h3>
-                <p><strong>Important:</strong> When you sign in to Slouch AI, your data is automatically synchronized to our cloud servers (Firebase Firestore). This includes:</p>
-                <ul>
-                    <li>All check-in records</li>
-                    <li>Streak data</li>
-                    <li>Exercise completion history</li>
-                    <li>User profile information</li>
-                    <li>Headset posture session data</li>
-                    <li>Saved posture analysis results (excluding images)</li>
-                </ul>
-                <p>Cloud sync enables you to access your data across multiple devices and prevents data loss if you change devices.</p>
+                <h3>3.2 In the Cloud</h3>
+                <p>When you are signed in, your data is synchronized to <strong>Firebase Firestore</strong>, hosted by Google Cloud in the United States. Stored items include your profile, check-ins, streaks, training drill history, AirPods session summaries, posture report results (no images), gamification data, and XP events. Firestore is governed by security rules that prevent any user from reading or writing another user's data.</p>
 
-                <h3>3.3 Data Security</h3>
+                <h3>3.3 Security</h3>
                 <ul>
-                    <li>Data is encrypted in transit using TLS/SSL</li>
-                    <li>Cloud data is stored in Firebase Firestore with security rules that restrict access to your own data</li>
-                    <li>Authentication is handled through Firebase Authentication</li>
+                    <li>All network traffic uses HTTPS / TLS encryption;</li>
+                    <li>Authentication tokens are stored in the iOS Keychain;</li>
+                    <li>Server-side requests to our backend are authenticated using Firebase ID tokens;</li>
+                    <li>Firestore security rules restrict every user to their own documents.</li>
                 </ul>
+                <p>No system is perfectly secure. We work to protect your data, but we cannot guarantee absolute security.</p>
             </section>
 
             <section>
                 <h2>4. Third-Party Services</h2>
-                <p>We use the following third-party services that may receive your data:</p>
+                <p>We use the following service providers ("processors") to run the App. Each operates under their own privacy policy.</p>
 
-                <h3>4.1 Firebase (Google)</h3>
+                <h3>4.1 Firebase (Google LLC)</h3>
                 <ul>
-                    <li><strong>Firebase Authentication:</strong> Manages user sign-in and identity</li>
-                    <li><strong>Firebase Firestore:</strong> Stores your synchronized data</li>
-                    <li><strong>Firebase Analytics:</strong> Collects anonymous usage statistics</li>
-                    <li><strong>Firebase Crashlytics:</strong> Collects crash reports for debugging</li>
+                    <li><strong>Firebase Authentication</strong> — Apple / Google sign-in and account identity</li>
+                    <li><strong>Cloud Firestore</strong> — encrypted storage of your account data</li>
+                    <li><strong>Firebase Analytics</strong> — aggregate, pseudonymous usage events</li>
+                    <li><strong>Firebase Crashlytics</strong> — crash reports and stack traces</li>
                 </ul>
-                <p>Privacy Policy: <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></p>
+                <p>Privacy: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></p>
 
-                <h3>4.2 OpenAI</h3>
+                <h3>4.2 OpenAI (OpenAI, L.L.C.)</h3>
                 <ul>
-                    <li>Posture images are sent to OpenAI's GPT-4 Vision API for analysis</li>
-                    <li>AI coaching conversations are processed by OpenAI's ChatGPT</li>
-                    <li>Requests include your Firebase user ID for rate limiting purposes</li>
+                    <li>Posture-scan photos and the analysis prompt are sent to OpenAI's GPT-4 family Vision API for analysis.</li>
+                    <li>Only the data needed to perform the analysis is sent. We do not include your name, email, or any other identifying profile data.</li>
+                    <li>Per OpenAI's API data-usage policy, prompts and outputs are not used to train OpenAI's models.</li>
                 </ul>
-                <p>Privacy Policy: <a href="https://openai.com/privacy" target="_blank">openai.com/privacy</a></p>
+                <p>Privacy: <a href="https://openai.com/privacy" target="_blank" rel="noopener">openai.com/privacy</a></p>
 
-                <h3>4.3 Anthropic</h3>
-                <ul>
-                    <li>Some AI coaching features may use Anthropic's Claude API</li>
-                </ul>
-                <p>Privacy Policy: <a href="https://www.anthropic.com/privacy" target="_blank">anthropic.com/privacy</a></p>
+                <h3>4.3 AIProxy</h3>
+                <p>In some configurations, posture-scan requests are routed through <strong>AIProxy</strong>, a proxy that authenticates and forwards requests to OpenAI on our behalf without exposing our API keys. AIProxy does not retain image content beyond what is required to deliver the request.</p>
+                <p>Privacy: <a href="https://www.aiproxy.com/privacy" target="_blank" rel="noopener">aiproxy.com/privacy</a></p>
 
-                <h3>4.4 RevenueCat</h3>
-                <ul>
-                    <li>Manages subscription purchases and entitlements</li>
-                    <li>Receives purchase transaction data from Apple</li>
-                </ul>
-                <p>Privacy Policy: <a href="https://www.revenuecat.com/privacy" target="_blank">revenuecat.com/privacy</a></p>
+                <h3>4.4 Anthropic</h3>
+                <p>Our backend supports the Anthropic Claude API as an alternative coaching provider. If a feature you use is configured to call Claude, the relevant text prompt will be sent to Anthropic. Photos are never sent to Anthropic.</p>
+                <p>Privacy: <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">anthropic.com/legal/privacy</a></p>
 
-                <h3>4.5 Meta (Facebook)</h3>
-                <ul>
-                    <li><strong>Facebook SDK:</strong> Used for advertising measurement and optimization</li>
-                    <li><strong>Aggregated Event Measurement (AEM):</strong> Privacy-preserving framework for measuring ad effectiveness on iOS</li>
-                    <li>Receives purchase events and app interaction data when tracking is permitted</li>
-                    <li>Data is used to optimize advertising campaigns and measure return on ad spend</li>
-                </ul>
-                <p>Privacy Policy: <a href="https://www.facebook.com/privacy/policy/" target="_blank">facebook.com/privacy/policy</a></p>
+                <h3>4.5 RevenueCat</h3>
+                <p>Manages App Store subscriptions and entitlements. Receives transaction metadata (product ID, period, status). RevenueCat does not receive your name, email, posture data, or scan photos.</p>
+                <p>Privacy: <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a></p>
 
-                <h3>4.6 Apple and Google</h3>
-                <ul>
-                    <li>Sign-In services for authentication</li>
-                    <li>App Store for purchases and subscriptions</li>
-                    <li>SKAdNetwork for privacy-preserving ad attribution</li>
-                </ul>
+                <h3>4.6 Meta Platforms (Facebook)</h3>
+                <p>Used solely for advertising attribution and campaign measurement, subject to your ATT choice (see Section 1.10). Tracking domains are facebook.com, facebook.net, fb.com, and fb.gg.</p>
+                <p>Privacy: <a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener">facebook.com/privacy/policy</a></p>
+
+                <h3>4.7 Apple &amp; Google</h3>
+                <p>Apple provides Sign in with Apple, the App Store, in-app purchase processing, push notifications (APNs), and SKAdNetwork. Google provides Google Sign-In and the Firebase services listed above.</p>
+
+                <h3>4.8 WishKit</h3>
+                <p>If you submit a feature request or feedback through the in-App feedback view, that submission is processed by <strong>WishKit</strong> so we can collect and triage feedback.</p>
+                <p>Privacy: <a href="https://wishkit.io/privacy" target="_blank" rel="noopener">wishkit.io/privacy</a></p>
+
+                <h3>4.9 Backend Hosting</h3>
+                <p>Our backend API (which proxies AI requests, performs authentication, and applies rate limits) is hosted on <strong>Render</strong> in the United States.</p>
             </section>
 
             <section>
-                <h2>5. Your Rights and Controls</h2>
+                <h2>5. Your Rights &amp; Choices</h2>
 
-                <h3>5.1 Access Your Data</h3>
-                <p>You can view all your data within the app, including check-in history, streaks, and saved posture reports.</p>
-
-                <h3>5.2 Delete Your Data</h3>
+                <h3>5.1 Inside the App</h3>
                 <ul>
-                    <li>Delete individual saved posture reports from within the app</li>
-                    <li>Delete your entire account, which removes all your data from both your device and our cloud servers</li>
+                    <li><strong>View your data:</strong> Your check-ins, sessions, drills, scan reports, XP history, and profile are all accessible inside the App.</li>
+                    <li><strong>Delete individual items:</strong> Delete any saved posture report from the report list.</li>
+                    <li><strong>Delete your account:</strong> Settings → Delete Account permanently removes your Firebase account, all your Firestore data, and all local Core Data on the device. This action cannot be undone. If you have an active App Store subscription, you must cancel it separately in <em>iOS Settings → [your name] → Subscriptions</em> — Apple does not allow developers to cancel subscriptions on your behalf.</li>
                 </ul>
 
-                <h3>5.3 Camera and Motion Permissions</h3>
+                <h3>5.2 In iOS Settings</h3>
                 <ul>
-                    <li>You can revoke camera access through your device's Settings app</li>
-                    <li>You can revoke motion access for AirPods through your device's Settings app</li>
-                    <li>The app will still function with limited features if permissions are revoked</li>
+                    <li><strong>Camera, Motion &amp; Notifications:</strong> manage permissions in <em>Settings → Posture Max</em>. Revoking the camera disables AI scans; revoking motion disables AirPods sessions; revoking notifications disables reminders. The rest of the App continues to work.</li>
+                    <li><strong>Tracking:</strong> change your ATT choice in <em>Settings → Privacy &amp; Security → Tracking</em>.</li>
+                    <li><strong>Apple Advertising Personalization:</strong> manage in <em>Settings → Privacy &amp; Security → Apple Advertising</em>.</li>
                 </ul>
 
-                <h3>5.4 Notifications</h3>
-                <p>You can disable posture check-in reminders through the app settings or your device's notification settings.</p>
-
-                <h3>5.5 Advertising Tracking</h3>
+                <h3>5.3 GDPR (EEA / UK Residents)</h3>
+                <p>If you are in the European Economic Area, the United Kingdom, or Switzerland, the General Data Protection Regulation gives you the right to:</p>
                 <ul>
-                    <li><strong>App Tracking Transparency (ATT):</strong> When you first open the app, you will be prompted to allow or deny tracking. You can change this decision at any time.</li>
-                    <li><strong>Device Settings:</strong> Go to Settings &rarr; Privacy &amp; Security &rarr; Tracking to manage which apps can track your activity</li>
-                    <li><strong>Limit Ad Tracking:</strong> Go to Settings &rarr; Privacy &amp; Security &rarr; Apple Advertising to limit personalized ads</li>
-                    <li>If you deny tracking, your device identifier will not be shared with advertising partners, but you may still see ads (they just won't be personalized)</li>
+                    <li>Access the personal data we hold about you;</li>
+                    <li>Have inaccurate data corrected;</li>
+                    <li>Have your data erased;</li>
+                    <li>Restrict or object to certain processing;</li>
+                    <li>Receive a copy of your data in a portable format;</li>
+                    <li>Withdraw consent (where processing is based on consent) at any time;</li>
+                    <li>Lodge a complaint with your local supervisory authority.</li>
                 </ul>
+                <p>Our legal bases for processing are: (i) <em>performance of contract</em> for delivering the App's features, (ii) <em>legitimate interests</em> for diagnostics and abuse prevention, (iii) <em>consent</em> for advertising tracking and notifications, and (iv) <em>legal obligation</em> where required.</p>
+                <p>To exercise any of these rights, email <a href="mailto:support@posturemax.com">support@posturemax.com</a>. The fastest way to delete your data is in-App (Settings → Delete Account).</p>
+
+                <h3>5.4 CCPA / CPRA (California Residents)</h3>
+                <p>California residents have the right to know what personal information we collect, to request deletion of that information, to correct inaccuracies, and to opt out of "sale" or "sharing" of personal information. <strong>We do not sell personal information.</strong> We do "share" certain identifiers with Meta for cross-context behavioral advertising only when you have granted ATT permission; you can opt out at any time by denying ATT or by emailing <a href="mailto:support@posturemax.com">support@posturemax.com</a>. We will not discriminate against you for exercising any of these rights.</p>
+
+                <h3>5.5 Other Jurisdictions</h3>
+                <p>If your jurisdiction grants you additional privacy rights, you may exercise them by contacting us. We will respond within the timeframes required by applicable law.</p>
             </section>
 
             <section>
                 <h2>6. Data Retention</h2>
                 <ul>
-                    <li><strong>Local data:</strong> Retained on your device until you delete the app or clear app data</li>
-                    <li><strong>Cloud data:</strong> Retained while your account is active</li>
-                    <li><strong>Account deletion:</strong> All cloud data is deleted when you delete your account</li>
-                    <li><strong>Posture images:</strong> Not retained - processed in memory and immediately discarded</li>
-                    <li><strong>Analytics data:</strong> Retained according to Firebase's data retention policies</li>
+                    <li><strong>Account data:</strong> retained while your account is active. Deleted permanently within 30 days after you delete your account.</li>
+                    <li><strong>Local data on your device:</strong> retained until you delete the App, sign out, or use the in-App account-deletion option.</li>
+                    <li><strong>Posture-scan photos:</strong> not retained — held only in memory during analysis and then discarded.</li>
+                    <li><strong>Crash and analytics data:</strong> retained according to Google's default Firebase retention periods (typically up to 14 months for analytics; longer for crash reports until cleared).</li>
+                    <li><strong>Backups and logs:</strong> may persist in encrypted backups for a short additional period as required for security and operational continuity.</li>
                 </ul>
             </section>
 
             <section>
-                <h2>7. Children's Privacy</h2>
-                <p>Slouch AI is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us so we can delete that information.</p>
+                <h2>7. International Data Transfers</h2>
+                <p>Posture Max is operated from the United States. Your data is transferred to and processed in the U.S. and may be processed in any country where our service providers operate (including Google Cloud regions). Where required, we rely on Standard Contractual Clauses or equivalent transfer mechanisms approved under applicable law.</p>
             </section>
 
             <section>
-                <h2>8. International Data Transfers</h2>
-                <p>Your data may be transferred to and processed in the United States where our servers and third-party service providers are located. By using Slouch AI, you consent to this transfer. We use services that comply with applicable data protection requirements for international transfers.</p>
+                <h2>8. Children's Privacy</h2>
+                <p>Posture Max is intended for users <strong>13 years of age or older</strong>. We do not knowingly collect personal information from children under 13. The App enforces a minimum age of 13 during onboarding. If you are a parent or guardian and believe a child under 13 has provided us with personal information, please contact <a href="mailto:support@posturemax.com">support@posturemax.com</a> and we will delete it promptly. Users under 18 should obtain a parent or guardian's permission before using the App.</p>
             </section>
 
             <section>
-                <h2>9. Changes to This Policy</h2>
-                <p>We may update this Privacy Policy from time to time. We will notify you of significant changes by:</p>
+                <h2>9. Health Information</h2>
+                <p>Posture Max is a general wellness product and is not a medical device. The posture data, scores, and recommendations the App generates are for informational and motivational purposes only. They are not medical records, are not protected health information ("PHI") under HIPAA, and should not be used to make medical decisions. See our <a href="terms.html">Terms &amp; Conditions</a> for the full health disclaimer.</p>
+            </section>
+
+            <section>
+                <h2>10. Changes to This Policy</h2>
+                <p>We may update this Privacy Policy from time to time. When we do, we'll change the "Last updated" date above. For material changes, we will provide additional notice — for example, an in-App alert or email. Your continued use of the App after a change becomes effective indicates acceptance of the updated policy.</p>
+            </section>
+
+            <section>
+                <h2>11. Contact Us</h2>
+                <p>If you have any questions about this Privacy Policy, your data, or our practices, please contact us:</p>
                 <ul>
-                    <li>Posting the updated policy on this page</li>
-                    <li>Updating the "Last updated" date</li>
-                    <li>Providing notice within the app for material changes</li>
-                </ul>
-            </section>
-
-            <section>
-                <h2>10. Contact Us</h2>
-                <p>If you have questions about this Privacy Policy or our data practices, please contact us at:</p>
-                <ul>
-                    <li>Email: <a href="mailto:support@slouchai.com">support@slouchai.com</a></li>
+                    <li>Email: <a href="mailto:support@posturemax.com">support@posturemax.com</a></li>
                 </ul>
                 <p>False Summit Solutions LLC<br>
-                Developer of Slouch AI</p>
+                Developer of Posture Max</p>
+            </section>
+
+            <section class="acknowledgment">
+                <p><strong>By creating an account or using Posture Max, you acknowledge that you have read and understood this Privacy Policy.</strong></p>
             </section>
         </main>
 
         <footer>
             <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="app-icon.png" alt="Posture Max icon">
+                    Posture Max
+                </div>
                 <div class="footer-links">
                     <a href="index.html">Home</a>
                     <a href="privacy.html">Privacy</a>
                     <a href="terms.html">Terms</a>
-                    <a href="mailto:support@slouchai.com">Contact</a>
+                    <a href="mailto:support@posturemax.com">Contact</a>
                 </div>
-                <div class="copyright">
-                    &copy; 2025 Slouch AI. All rights reserved.
-                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2026 Posture Max. All rights reserved.
             </div>
         </footer>
     </div>
