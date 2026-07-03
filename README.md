@@ -38,7 +38,6 @@ The website will be available at:
 
 ### Updates Needed:
 
-1. Replace `YOUR_APP_ID` in index.html with your actual App Store ID
-2. Replace `YOUR_FORM_ID` in index.html with a Formspree form ID or other form handler
-3. Update email addresses if different from the defaults
-4. Update the CNAME file with your actual domain (or delete if not using custom domain)
+1. Replace `YOUR_FORM_ID` in index.html with a Formspree form ID or other form handler
+2. Update email addresses if different from the defaults
+3. Update the CNAME file with your actual domain (or delete if not using custom domain)
