@@ -29,13 +29,14 @@
 
         <main class="legal-content">
             <h1>Privacy Policy</h1>
-            <p class="last-updated">Last updated: May 2, 2026</p>
-            <p class="last-updated">Effective date: May 2, 2026</p>
+            <p class="last-updated">Last updated: August 11, 2026</p>
+            <p class="last-updated">Effective date: August 11, 2026</p>
+            <p class="last-updated">Policy version: 2026.08.11</p>
 
             <section>
                 <h2>Overview</h2>
                 <p>This Privacy Policy explains how False Summit Solutions LLC ("PostureMax," "we," "us," or "our") collects, uses, stores, and shares your information when you use the PostureMax mobile application (the "App") and related services. We've tried to write this in plain language. If anything is unclear, email us at <a href="mailto:support@posturemaxapp.com">support@posturemaxapp.com</a>.</p>
-                <p class="highlight">In short: we collect what we need to make the App work — your account, your posture data, and the photos you take during scans. Photos are used for AI analysis and discarded; only the results are kept. You can delete everything from inside the App at any time.</p>
+                <p class="highlight">In short: we collect what we need to make the App work — your account, your posture data, and the photos you take during scans. Photos are used for AI analysis and discarded; only the results are kept. We also use limited pseudonymous product-funnel events to understand onboarding and subscription conversion; those events do not contain camera, motion, health, fitness, sensor, or posture-measurement data. Account deletion and requests concerning pseudonymous funnel data are described in Section 5.</p>
             </section>
 
             <section>
@@ -104,18 +105,32 @@
                 <p>We automatically collect:</p>
                 <ul>
                     <li>Crash logs and performance diagnostics (Firebase Crashlytics)</li>
-                    <li>Aggregate feature-usage events (Firebase Analytics) — e.g. which screens are opened, which features are used, how often the App is launched</li>
+                    <li>Pseudonymous event-level feature-usage data (Firebase Analytics) — e.g. which screens are opened, which features are used, and how often the App is launched; reports produced from this data may be aggregate</li>
                     <li>Device model, operating system version, App version, language, and region</li>
                 </ul>
 
-                <h3>1.9 Push Notifications</h3>
+                <h3>1.9 First-Party Product &amp; Funnel Analytics</h3>
+                <p>To understand where people leave onboarding and whether advertising acquisition leads to subscription conversion, the App is designed to collect a limited event-level product analytics stream. When enabled, each record may include:</p>
+                <ul>
+                    <li>A random, pseudonymous identifier for this App installation (rotated after the App is reinstalled), a per-process session identifier, and RevenueCat's anonymous App User ID so product milestones can be related to subscription outcomes;</li>
+                    <li>For relay security, an Apple App Attest key identifier plus challenge, attestation, and assertion metadata used to verify that requests came from a supported genuine App instance;</li>
+                    <li>App version, build, operating-system version, ATT authorization status, and event timestamps;</li>
+                    <li>First-open and app-open milestones; onboarding steps viewed, completed, or skipped; permission prompts and their results; and the first qualifying activation milestone (starting monitoring, completing a scan report, or completing a guided drill);</li>
+                    <li>Paywall presentation and interactions, checkout initiation and result (success, cancellation, pending, or failure), and restore outcomes, including whether no active entitlement was found; and</li>
+                    <li>Low-cardinality paywall, offering, and product identifiers and, when shown, the displayed localized price and currency. These client events are not verified subscription revenue records.</li>
+                </ul>
+                <p>This stream does <strong>not</strong> contain your name, email address, Firebase account ID, IDFA, photos or camera frames, motion or other sensor samples, HealthKit data, health or fitness content, body or posture measurements or scores, diagnoses, free-form health information, payment-card details, or verified subscription revenue amounts.</p>
+                <p>Like any Internet service, the relay and its hosting or security providers may necessarily process source IP addresses and standard HTTP request metadata while receiving, securing, or rate-limiting a request. The exact provider logging, retention, and transfer practices must be confirmed and disclosed before live event delivery is enabled.</p>
+                <p>Events are stored temporarily on the device if delivery is unavailable and, when all launch safeguards are enabled, are sent over HTTPS through the protected relay described in Section 3.2. Retention and deletion are described in Sections 5 and 6.</p>
+
+                <h3>1.10 Push Notifications</h3>
                 <p>If you grant notification permission, we send local and remote notifications for posture reminders, streaks, milestones, and evolution events. You can disable these in iOS Settings or in the App's settings at any time.</p>
 
-                <h3>1.10 Advertising &amp; Tracking Data</h3>
-                <p>The App integrates the <strong>Meta (Facebook) iOS SDK</strong> for advertising attribution and campaign measurement. On first launch you will see an Apple <strong>App Tracking Transparency (ATT)</strong> prompt. The data we share with Meta depends on your choice:</p>
+                <h3>1.11 Advertising &amp; Tracking Data</h3>
+                <p>The App integrates the <strong>Meta (Facebook) iOS SDK</strong> for advertising attribution and campaign measurement. During onboarding, the App may request permission through Apple's <strong>App Tracking Transparency (ATT)</strong> prompt. Meta attribution, events, device-identifier collection, and RevenueCat-to-Meta linkage are enabled only while ATT authorization is explicitly granted. The data processing depends on your choice:</p>
                 <ul>
-                    <li><strong>If you allow tracking:</strong> we may share your Identifier for Advertisers (IDFA), purchase events (e.g. trial start, subscription started), and product-interaction events with Meta to measure ad effectiveness and optimize campaigns.</li>
-                    <li><strong>If you deny tracking:</strong> the IDFA is not shared. We may still use Apple's privacy-preserving <strong>SKAdNetwork</strong> and Meta's <strong>Aggregated Event Measurement (AEM)</strong> to receive anonymized, aggregate conversion signals.</li>
+                    <li><strong>If you allow tracking:</strong> the App may provide Meta with your IDFA and generic paywall, checkout, and registration milestones for ad measurement. It may also attach Meta's anonymous attribution identifier and permitted device identifiers to your RevenueCat anonymous profile. RevenueCat, rather than the App, may then report verified trial, subscription, renewal, conversion, billing, refund, and other subscription-lifecycle or revenue outcomes to Meta through its server-to-server integration. The App does not directly send Meta purchase or revenue events.</li>
+                    <li><strong>If you do not allow tracking:</strong> the App does not send Meta custom product events, handle Meta deep-link attribution, collect advertising identifiers for RevenueCat, or link the RevenueCat anonymous profile to Meta. If permission is later withdrawn, the App stops further Meta attribution and linkage activity for the current profile. Apple may independently provide privacy-preserving aggregate attribution through <strong>SKAdNetwork</strong>.</li>
                 </ul>
                 <p>Denying tracking does not change any core functionality of the App.</p>
             </section>
@@ -130,6 +145,8 @@
                     <li>Sync your data across devices when you are signed in;</li>
                     <li>Send notifications you've opted in to;</li>
                     <li>Process subscription purchases and manage entitlements;</li>
+                    <li>Understand onboarding and paywall drop-off and measure pseudonymous subscription conversion;</li>
+                    <li>Measure advertising effectiveness only when ATT authorization permits Meta attribution;</li>
                     <li>Diagnose crashes, fix bugs, and improve performance;</li>
                     <li>Prevent abuse and enforce our Terms;</li>
                     <li>Provide customer support;</li>
@@ -144,18 +161,21 @@
                 <h3>3.1 On Your Device</h3>
                 <ul>
                     <li><strong>Core Data</strong> stores your check-ins, sessions, profile, and gamification data locally;</li>
-                    <li><strong>iOS Keychain</strong> stores authentication tokens securely;</li>
+                    <li><strong>iOS Keychain</strong> stores authentication tokens, the pseudonymous installation identifier, and App Attest registration state securely;</li>
+                    <li><strong>Protected App storage</strong> temporarily stores pending or quarantined funnel events when they cannot be delivered;</li>
                     <li><strong>UserDefaults</strong> stores small preference values.</li>
                 </ul>
 
                 <h3>3.2 In the Cloud</h3>
                 <p>When you are signed in, your data is synchronized to <strong>Firebase Firestore</strong>, hosted by Google Cloud in the United States. Stored items include your profile, check-ins, streaks, training drill history, AirPods session summaries, posture report results (no images), gamification data, and XP events. Firestore is governed by security rules that prevent any user from reading or writing another user's data.</p>
+                <p>When first-party funnel analytics is enabled, event records are sent over HTTPS to a private PostureMax product-analytics relay and dashboard. The relay uses <strong>Apple App Attest</strong> challenges and cryptographic assertions to reject unsupported or unauthenticated clients; there is no shared relay secret stored in the App. The relay passes only the limited event fields described in Section 1.9 and does not receive posture, camera, motion, health, fitness, or sensor payloads. The relay's hosting provider, processing location, and any resulting international-transfer disclosure must be confirmed and added to this Policy before live event delivery is enabled.</p>
 
                 <h3>3.3 Security</h3>
                 <ul>
                     <li>All network traffic uses HTTPS / TLS encryption;</li>
                     <li>Authentication tokens are stored in the iOS Keychain;</li>
                     <li>Server-side requests to our backend are authenticated using Firebase ID tokens;</li>
+                    <li>First-party funnel requests use replay-protected Apple App Attest challenges and assertions and fail closed when attestation or required launch configuration is unavailable;</li>
                     <li>Firestore security rules restrict every user to their own documents.</li>
                 </ul>
                 <p>No system is perfectly secure. We work to protect your data, but we cannot guarantee absolute security.</p>
@@ -169,7 +189,7 @@
                 <ul>
                     <li><strong>Firebase Authentication</strong> — Apple / Google sign-in and account identity</li>
                     <li><strong>Cloud Firestore</strong> — encrypted storage of your account data</li>
-                    <li><strong>Firebase Analytics</strong> — aggregate, pseudonymous usage events</li>
+                    <li><strong>Firebase Analytics</strong> — pseudonymous event-level usage data and aggregate reporting</li>
                     <li><strong>Firebase Crashlytics</strong> — crash reports and stack traces</li>
                 </ul>
                 <p>Privacy: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></p>
@@ -191,15 +211,15 @@
                 <p>Privacy: <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">anthropic.com/legal/privacy</a></p>
 
                 <h3>4.5 RevenueCat</h3>
-                <p>Manages App Store subscriptions and entitlements. Receives transaction metadata (product ID, period, status). RevenueCat does not receive your name, email, posture data, or scan photos.</p>
+                <p>Manages App Store subscriptions and entitlements using an anonymous App User ID and receives transaction metadata (product ID, period, status). That anonymous ID is also used by the first-party funnel stream to relate product milestones to subscription outcomes. Only while ATT is authorized may the App attach Meta attribution identifiers to the RevenueCat profile so RevenueCat can send verified subscription-lifecycle and revenue outcomes to Meta. RevenueCat does not receive your name, email, posture data, or scan photos from this integration.</p>
                 <p>Privacy: <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a></p>
 
                 <h3>4.6 Meta Platforms (Facebook)</h3>
-                <p>Used solely for advertising attribution and campaign measurement, subject to your ATT choice (see Section 1.10). Tracking domains are facebook.com, facebook.net, fb.com, and fb.gg.</p>
+                <p>Used solely for advertising attribution and campaign measurement, subject to your ATT choice (see Section 1.11). Meta event and RevenueCat-linkage activity is disabled unless ATT is authorized. Tracking domains are facebook.com, facebook.net, fb.com, and fb.gg.</p>
                 <p>Privacy: <a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener">facebook.com/privacy/policy</a></p>
 
                 <h3>4.7 Apple &amp; Google</h3>
-                <p>Apple provides Sign in with Apple, the App Store, in-app purchase processing, push notifications (APNs), and SKAdNetwork. Google provides Google Sign-In and the Firebase services listed above.</p>
+                <p>Apple provides Sign in with Apple, the App Store, in-app purchase processing, push notifications (APNs), SKAdNetwork, and App Attest verification for the protected funnel relay. Google provides Google Sign-In and the Firebase services listed above.</p>
 
                 <h3>4.8 WishKit</h3>
                 <p>If you submit a feature request or feedback through the in-App feedback view, that submission is processed by <strong>WishKit</strong> so we can collect and triage feedback.</p>
@@ -216,8 +236,9 @@
                 <ul>
                     <li><strong>View your data:</strong> Your check-ins, sessions, drills, scan reports, XP history, and profile are all accessible inside the App.</li>
                     <li><strong>Delete individual items:</strong> Delete any saved posture report from the report list.</li>
-                    <li><strong>Delete your account:</strong> Settings → Delete Account permanently removes your Firebase account, all your Firestore data, and all local Core Data on the device. This action cannot be undone. If you have an active App Store subscription, you must cancel it separately in <em>iOS Settings → [your name] → Subscriptions</em> — Apple does not allow developers to cancel subscriptions on your behalf.</li>
+                    <li><strong>Delete your account:</strong> Settings → Delete Account permanently removes your Firebase account, all your Firestore data, and local Core Data on the device. It does not currently propagate an automatic deletion request to the separate pseudonymous funnel relay/dashboard. For that data, use the contact process below. This action cannot be undone. If you have an active App Store subscription, you must cancel it separately in <em>iOS Settings → [your name] → Subscriptions</em> — Apple does not allow developers to cancel subscriptions on your behalf.</li>
                 </ul>
+                <p>Raw funnel records are keyed to pseudonymous installation and RevenueCat anonymous identifiers rather than your name or email. To request access to or deletion of those raw records, email <a href="mailto:support@posturemaxapp.com">support@posturemaxapp.com</a>. The exact identity-verification and identifier-recovery workflow must be finalized and documented before live funnel delivery is enabled. If records have already been deleted or irreversibly anonymized under the final retention process, they can no longer be associated with an installation or retrieved by identifier.</p>
 
                 <h3>5.2 In iOS Settings</h3>
                 <ul>
@@ -237,8 +258,8 @@
                     <li>Withdraw consent (where processing is based on consent) at any time;</li>
                     <li>Lodge a complaint with your local supervisory authority.</li>
                 </ul>
-                <p>Our legal bases for processing are: (i) <em>performance of contract</em> for delivering the App's features, (ii) <em>legitimate interests</em> for diagnostics and abuse prevention, (iii) <em>consent</em> for advertising tracking and notifications, and (iv) <em>legal obligation</em> where required.</p>
-                <p>To exercise any of these rights, email <a href="mailto:support@posturemaxapp.com">support@posturemaxapp.com</a>. The fastest way to delete your data is in-App (Settings → Delete Account).</p>
+                <p>Our legal bases for processing are: (i) <em>performance of contract</em> for delivering the App's features, (ii) <em>legitimate interests</em> for diagnostics and abuse prevention, (iii) <em>consent</em> for advertising tracking and notifications, and (iv) <em>legal obligation</em> where required. The legal basis and consent requirements, if any, for the first-party funnel stream must be confirmed for every launch jurisdiction before that stream is enabled; this Policy does not itself determine that consent is unnecessary.</p>
+                <p>To exercise any of these rights, email <a href="mailto:support@posturemaxapp.com">support@posturemaxapp.com</a>. In-App deletion covers the Firebase and local data described above; requests concerning raw pseudonymous funnel data must use the separate contact process in Section 5.1 until a tested automatic propagation path exists.</p>
 
                 <h3>5.4 CCPA / CPRA (California Residents)</h3>
                 <p>California residents have the right to know what personal information we collect, to request deletion of that information, to correct inaccuracies, and to opt out of "sale" or "sharing" of personal information. <strong>We do not sell personal information.</strong> We do "share" certain identifiers with Meta for cross-context behavioral advertising only when you have granted ATT permission; you can opt out at any time by denying ATT or by emailing <a href="mailto:support@posturemaxapp.com">support@posturemaxapp.com</a>. We will not discriminate against you for exercising any of these rights.</p>
@@ -251,16 +272,19 @@
                 <h2>6. Data Retention</h2>
                 <ul>
                     <li><strong>Account data:</strong> retained while your account is active. Deleted permanently within 30 days after you delete your account.</li>
-                    <li><strong>Local data on your device:</strong> retained until you delete the App, sign out, or use the in-App account-deletion option.</li>
+                    <li><strong>Local account and posture data on your device:</strong> retained until you delete the App, sign out, or use the in-App account-deletion option. The separate funnel queue and pseudonymous security/installation state follow the funnel-specific rules below and are not currently cleared by in-App account deletion.</li>
                     <li><strong>Posture-scan photos:</strong> not retained — held only in memory during analysis and then discarded.</li>
                     <li><strong>Crash and analytics data:</strong> retained according to Google's default Firebase retention periods (typically up to 14 months for analytics; longer for crash reports until cleared).</li>
-                    <li><strong>Backups and logs:</strong> may persist in encrypted backups for a short additional period as required for security and operational continuity.</li>
+                    <li><strong>First-party funnel analytics:</strong> the client expires pending and quarantined event-level records within 90 days of the event timestamp and never delivers them after that limit. If the protected relay accepts an event, the raw event-level record is retained for no more than 90 days from the time the relay receives it.</li>
+                    <li><strong>Backups and logs:</strong> may persist in encrypted backups for a short additional period as required for security and operational continuity. This general backup statement does not extend the approved 90-day limit for installation-linked raw funnel records.</li>
                 </ul>
+                <p>At the end of that 90-day period, the raw event-level funnel records and their installation, RevenueCat user, session, event, and idempotency identifiers are deleted. We do not retain event-level funnel records after that period. App Attest registration and request-security records are security records rather than funnel events and follow their separately documented security-retention process. This Policy does not state that any post-90-day aggregate funnel data is retained. If we adopt such a practice in the future, we will update this Policy before using it.</p>
             </section>
 
             <section>
                 <h2>7. International Data Transfers</h2>
                 <p>PostureMax is operated from the United States. Your data is transferred to and processed in the U.S. and may be processed in any country where our service providers operate (including Google Cloud regions). Where required, we rely on Standard Contractual Clauses or equivalent transfer mechanisms approved under applicable law.</p>
+                <p>The hosting provider and processing location for the first-party funnel relay/dashboard have not yet been confirmed for this disclosure. Live funnel delivery will remain disabled until those facts and any applicable transfer mechanism are documented here.</p>
             </section>
 
             <section>
